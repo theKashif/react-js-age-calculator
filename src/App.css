@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.age-calculator {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex; /* Center its content horizontally and vertically */
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center horizontally within the container */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.age-calculator h1 {
+  font-size: 60px;
+  margin: 20px;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.age-calculator input[type="date"] {
+  border-radius: 10px;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 20px;
+}
+
+.age-calculator button {
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.age-calculator .result {
+  margin-top: 20px;
+  font-size: 20px;
 }
